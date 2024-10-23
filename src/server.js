@@ -7,7 +7,7 @@ const PORT = 3000;
 const server = express();
 
 const corsConfig = {
-  origin: 'http://localhost:5173',
+  origin: 'http://159.65.185.107:5000',
   methods: ["GET", "POST"]
 };
 
