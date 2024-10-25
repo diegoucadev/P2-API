@@ -1,13 +1,14 @@
 import express from "express";
 import userRouter from "./routes/user.routes.js";
+import 'dotenv/config';
 import cors from 'cors';
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const server = express();
 
 const corsConfig = {
-  origin: 'http://159.65.185.107:5000',
+  origin: process.env.API_URL || 'http://localhost:5173',
   methods: ["GET", "POST"]
 };
 
